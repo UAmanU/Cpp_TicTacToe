@@ -1,8 +1,7 @@
 
 #include <string>
 #include <vector>
-#include "TTT_board.h"
-#include "TTT_configInfo.hpp"
+#include "include/board.h"
 Board::Board(const int board_size) : board_size(board_size * 3)
 {
 }
