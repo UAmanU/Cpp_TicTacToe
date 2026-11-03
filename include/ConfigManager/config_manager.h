@@ -1,11 +1,20 @@
 #pragma once
 #include <string>
 #include <array>
+#include <json.hpp>
+#include <raylib.h>
 class ConfigManager
 {
+private:
+    std::string filename = "ConfigSettings.json";
+    nlohmann::json config_data;
+    Color convert_rgb_to_color(const std::array<int, 3> &rgb) const;
+
 public:
     ConfigManager() = default;
     ~ConfigManager() = default;
+    void load();
+    void save();
     int get_window_width() const;
     int get_window_height() const;
     std::string get_window_title() const;
@@ -19,11 +28,9 @@ public:
     int get_center_tile() const;
     std::array<int, 4> get_corners() const;
     std::array<int, 4> get_sides() const;
-
-    std::array<int, 3> get_background_color() const;
-    std::array<int, 3> get_line_color() const;
-    std::array<int, 3> get_x_color() const;
-    std::array<int, 3> get_o_color() const;
-    std::array<int, 3> get_text_color() const;
-    std::array<int, 3> get_grid_color() const;
+    Color get_background_color() const;
+    Color get_x_color() const;
+    Color get_o_color() const;
+    Color get_text_color() const;
+    Color get_grid_color() const;
 };
