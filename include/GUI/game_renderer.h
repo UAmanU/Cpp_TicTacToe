@@ -1,5 +1,5 @@
 #pragma once
-#include "include/Board/figure.h"
+#include "include/Tile/tile.h"
 #include <array>
 class GameRenderer
 {
