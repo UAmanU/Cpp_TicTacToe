@@ -5,31 +5,31 @@ Color ColorsConfigManager::convert_rgb_to_color(const std::array<int, 3> &rgb) c
 }
 Color ColorsConfigManager::get_background_color() const
 {
-    std::array<int, 3> rgb = config_data["colors"]["background"].get<std::array<int, 3>>();
+    std::array<int, 3> rgb = config_data["background"].get<std::array<int, 3>>();
     return convert_rgb_to_color(rgb);
 }
 Color ColorsConfigManager::get_background_color() const
 {
-    std::array<int, 3> rgb = config_data["colors"]["background"].get<std::array<int, 3>>();
+    std::array<int, 3> rgb = config_data["background"].get<std::array<int, 3>>();
     return convert_rgb_to_color(rgb);
 }
 Color ColorsConfigManager::get_x_color() const
 {
-    std::array<int, 3> rgb = config_data["colors"]["X"].get<std::array<int, 3>>();
+    std::array<int, 3> rgb = config_data["X"].get<std::array<int, 3>>();
     return convert_rgb_to_color(rgb);
 }
 Color ColorsConfigManager::get_o_color() const
 {
-    std::array<int, 3> rgb = config_data["colors"]["O"].get<std::array<int, 3>>();
+    std::array<int, 3> rgb = config_data["O"].get<std::array<int, 3>>();
     return convert_rgb_to_color(rgb);
 }
 Color ColorsConfigManager::get_text_color() const
 {
-    std::array<int, 3> rgb = config_data["colors"]["text"].get<std::array<int, 3>>();
+    std::array<int, 3> rgb = config_data["text"].get<std::array<int, 3>>();
     return convert_rgb_to_color(rgb);
 }
 Color ColorsConfigManager::get_grid_color() const
 {
-    std::array<int, 3> rgb = config_data["colors"]["grid"].get<std::array<int, 3>>();
+    std::array<int, 3> rgb = config_data["grid"].get<std::array<int, 3>>();
     return convert_rgb_to_color(rgb);
 }
