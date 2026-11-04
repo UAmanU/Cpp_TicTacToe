@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <memory>
-#include "include/Board/figure.h"
+#include "include/Tile/figure.h"
 
 class Player
 {
