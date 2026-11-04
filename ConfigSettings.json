@@ -11,6 +11,8 @@
         "goes_first": true
     },
     "game": {
+        "tile_size": 150,
+        "figure_size": 75,
         "win_conditions": [
             [
                 0,
